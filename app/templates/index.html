@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/bootstrap-datepicker.min.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="search-form">
+        <form>
+            <div class="form-group col-md-6">
+                <label for="pickup_location">Pickup Location</label>
+                <input class="form-control" id="pickup_location" placeholder="Pickup Location" required type="text">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="dropoff_location">Dropoff Location</label>
+                <input class="form-control" id="dropoff_location" placeholder="Dropoff Location" required type="text">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="pickup_date">Pickup Date</label>
+                <input class="datepicker" id="pickup_date" placeholder="Pickup Date" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="pickup_time">Pickup Time</label>
+                <input class="form-control" id="pickup_time" placeholder="Pickup Time" required type="time">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="dropoff_date">Dropoff Date</label>
+                <input class="datepicker" id="dropoff_date" placeholder="Pickup Date" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="dropoff_time">Dropoff Time</label>
+                <input class="form-control" id="dropoff_time" placeholder="Pickup Time" required type="time">
+            </div>
+
+            <div class="form-group col-md-12 text-center">
+                <button class="btn btn-primary">Search</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.backstretch.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/wow.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
